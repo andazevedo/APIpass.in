@@ -1,0 +1,37 @@
+//create event
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+   "title": "NLW UNITE",
+   "details": "An event for those who are passionate!",
+   "maximumAttendees": 20
+
+}
+
+###
+//register for event
+POST http://localhost:3333/events/8755096d-86ac-4d46-a764-fa21050cfa76/attendees
+Content-Type: application/json
+
+{
+   "name": "andrey",
+   "email": "andrey@gmail.com"
+}
+
+###
+//pesquisar evento
+GET http://localhost:3333/events/f5575ae9-36a7-4007-b391-54cec4750dd4
+
+###
+//get attendee badge
+GET http://localhost:3333/attendees/10/badge
+
+###
+//get attendee check-in
+GET http://localhost:3333/attendees/10/check-in
+
+###
+//get event attendees
+GET http://localhost:3333/events/f5575ae9-36a7-4007-b391-54cec4750dd4/attendees  
+//?query=handong adicionar esse campo no link se quiser trazer uma pessoa específica
