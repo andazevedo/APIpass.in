@@ -18,7 +18,7 @@ export async function createEvent(app: FastifyInstance) {
         tags: ["events"],
         body: z.object({
           title: z
-            .string({ invalid_type_error: "O titlulo precisa ser um texto" })
+            .string({ invalid_type_error: "O título precisa ser um texto" })
             .min(4),
           details: z.string().nullable(),
           maximumAttendees: z.number().int().positive().nullable(),

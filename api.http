@@ -11,17 +11,17 @@ Content-Type: application/json
 
 ###
 //register for event
-POST http://localhost:3333/events/8755096d-86ac-4d46-a764-fa21050cfa76/attendees
+POST http://localhost:3333/events/cc1dfe8b-265f-4d15-84e9-434c98051390/attendees
 Content-Type: application/json
 
 {
-   "name": "andrey",
-   "email": "andrey@gmail.com"
+   "name": "Jiu",
+   "email": "jiu@gmail.com"
 }
 
 ###
 //pesquisar evento
-GET http://localhost:3333/events/f5575ae9-36a7-4007-b391-54cec4750dd4
+GET http://localhost:3333/events/cc1dfe8b-265f-4d15-84e9-434c98051390
 
 ###
 //get attendee badge
